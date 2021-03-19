@@ -1,95 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1,
-  maximum-scale=5"
-    />
-
-    <link rel="icon" href="devchallenges.png" />
-
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="https://devchallenges.io/"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-
-    <title>Devchallenges</title>
-
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-
-      ul {
-        padding-left: 24px;
-      }
-
-      li {
-        margin-bottom: 8px;
-      }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
-
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
-      </div>
-
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Omar's fifth project on devchallenge.io">
+  <meta name="keywords" content="html, css, flex, bem, responsive, grid">
+  <meta name="author" content="Omar Insurriaga">
+  <title>Gallery page</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <img src="./profilePhoto.png" alt="profile pic" class="header__image">
+      <h1 class="header__name">Rodney Cotton</h1>
+      <h2 class="header__location">Helsinki, Finland</h2>
+      <ul class="header__stats">
+        <li class="header__stats-item">
+          <h2 class="header__stats-number">100</h2>
+          <h2 class="header__stats-category">Posts</h2>
         </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
+        <li class="header__stats-item">
+          <h2 class="header__stats-number">2,242</h2>
+          <h2 class="header__stats-category">Followers</h2>
+        </li>
+        <li class="header__stats-item">
+          <h2 class="header__stats-number">1,432</h2>
+          <h2 class="header__stats-category">Following</h2>
         </li>
       </ul>
-    </div>
-  </body>
+    </header>
+    <main class="content">
+      <img src="./photo1.png" alt="" class="content__image">
+      <img src="./photo2.png" alt="" class="content__image">
+      <img src="./photo3.png" alt="" class="content__image">
+      <img src="./photo4.png" alt="" class="content__image">
+      <img src="./photo5.png" alt="" class="content__image">
+      <img src="./photo6.png" alt="" class="content__image">
+    </main>
+    <footer class="footer">
+      created by <span>oinsur</span> - devChallenges.io
+    </footer>
+  </div>
+</body>
 </html>
