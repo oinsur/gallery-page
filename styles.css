@@ -1,0 +1,162 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+
+/*Remove default margins,padding & set box-sizing
+also sets the font and font color used through most of the layout*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #4E5150;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1440px;
+  min-width: 375px;
+  max-height: 1577px;
+  margin: 0 auto;
+}
+
+.page {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+  padding: 3% 16% 2%;
+  background-color:darkgrey;
+  color: #000;
+}
+
+/*header styles*/
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__image {
+  width: 16%;
+  border-radius: 16px;
+}
+
+.header__name {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29.26px;
+  margin-top: 16px;
+}
+
+.header__location {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17.07px;
+}
+
+/*header stats styles*/
+.header__stats {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.header__stats-item {
+  list-style-type: none;
+  width: 100px;
+  height: 67px;
+  border-radius: 12px;
+  padding-top: 2%;
+  margin-left: 24px;
+  background-color: #E5E5E5;
+}
+
+/*this helps center the stat items*/
+.header__stats-item:first-of-type {
+  margin-left: 0;
+}
+
+.header__stats-number {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 17.07px;
+  text-align: center;
+}
+
+.header__stats-category {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17.07px;
+  text-align: center;
+  color: #BDBDBD;
+}
+
+/*main layout styles*/
+.content {
+  margin: 64px auto;
+  display: grid;
+  width: 100%;
+  
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3,auto);
+  grid-template-areas: 
+    "image1 image2 image2"
+    "image3 image3 image4"
+    "image6 image5 image4"
+  ;
+  grid-gap: 32px;
+}
+
+/*general image styles*/
+.content__image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+
+/*individual image styles*/
+.content__image1 {
+  /* background-image: url(./photo1.png);   */
+  grid-area: image1;
+}
+
+.content__image2 {
+  /* background-image: url(./photo2.png); */
+  grid-area: image2;
+}
+
+.content__image3 {
+  /* background-image: url(./photo3.png); */
+  grid-area: image3;
+}
+
+.content__image4 {
+  /* background-image: url(./photo4.png); */
+  grid-area: image4;
+}
+
+.content__image5 {
+  /* background-image: url(./photo5.png); */
+  grid-area: image5;
+}
+
+.content__image6 {
+  /* background-image: url(./photo6.png); */
+  grid-area: image6;
+}
+
+/*footer styles*/
+.footer {
+  margin-top: 93px;
+  color: #B9BDCF;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.footer span {
+  text-decoration: underline;
+  color:#B9BDCF;
+  font-weight: 700;
+}
