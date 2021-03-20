@@ -23,7 +23,6 @@ body {
   max-height: 100%;
   margin: 0 auto;
   padding: 3% 16% 2%;
-  background-color:darkgrey;
   color: #000;
 }
 
@@ -44,7 +43,7 @@ body {
   font-size: 24px;
   font-weight: 600;
   line-height: 29.26px;
-  margin-top: 16px;
+  margin-top: 2%;
 }
 
 .header__location {
@@ -58,7 +57,7 @@ body {
   display: flex;
   width: 100%;
   justify-content: center;
-  margin-top: 24px;
+  margin-top: 3%;
 }
 
 .header__stats-item {
@@ -67,7 +66,7 @@ body {
   height: 67px;
   border-radius: 12px;
   padding-top: 2%;
-  margin-left: 24px;
+  margin-left: 3%;
   background-color: #E5E5E5;
 }
 
@@ -93,7 +92,7 @@ body {
 
 /*main layout styles*/
 .content {
-  margin: 64px auto;
+  margin: 8% auto;
   display: grid;
   width: 100%;
   
@@ -104,7 +103,7 @@ body {
     "image3 image3 image4"
     "image6 image5 image4"
   ;
-  grid-gap: 32px;
+  grid-gap: 4%;
 }
 
 /*general image styles*/
@@ -115,40 +114,34 @@ body {
   border-radius: 12px;
 }
 
-/*individual image styles*/
+/*individual image grid area assignments*/
 .content__image1 {
-  /* background-image: url(./photo1.png);   */
   grid-area: image1;
 }
 
 .content__image2 {
-  /* background-image: url(./photo2.png); */
   grid-area: image2;
 }
 
 .content__image3 {
-  /* background-image: url(./photo3.png); */
   grid-area: image3;
 }
 
 .content__image4 {
-  /* background-image: url(./photo4.png); */
   grid-area: image4;
 }
 
 .content__image5 {
-  /* background-image: url(./photo5.png); */
   grid-area: image5;
 }
 
 .content__image6 {
-  /* background-image: url(./photo6.png); */
   grid-area: image6;
 }
 
 /*footer styles*/
 .footer {
-  margin-top: 93px;
+  margin-top: 20%;
   color: #B9BDCF;
   text-align: center;
   font-size: 14px;
@@ -159,4 +152,30 @@ body {
   text-decoration: underline;
   color:#B9BDCF;
   font-weight: 700;
+}
+
+/*media queries*/
+@media screen and (max-width: 768px) {
+  .page {
+    padding: 8% 3% 2%;
+  }
+  .header__image {
+    width: 28%;
+  }
+  .header__name {
+    font-size: 14px;
+  }
+  .header__location {
+    font-size: 10px;
+  }
+  .header__stats-item {
+    width: 78px;
+    height: 52px;
+  }
+  .header__stats-number {
+    font-size: 12px;
+  }
+  .header__stats-category {
+    font-size: 12px;
+  }
 }
